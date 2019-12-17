@@ -1,31 +1,6 @@
-## Project: Build a Traffic Sign Recognition Program
-[![Udacity - Self-Driving Car NanoDegree](https://s3.amazonaws.com/udacity-sdc/github/shield-carnd.svg)](http://www.udacity.com/drive)
+# **Build a Traffic Sign Recognition Program**
 
-Overview
----
-In this project, you will use what you've learned about deep neural networks and convolutional neural networks to classify traffic signs. You will train and validate a model so it can classify traffic sign images using the [German Traffic Sign Dataset](http://benchmark.ini.rub.de/?section=gtsrb&subsection=dataset). After the model is trained, you will then try out your model on images of German traffic signs that you find on the web.
-
-We have included an Ipython notebook that contains further instructions 
-and starter code. Be sure to download the [Ipython notebook](https://github.com/udacity/CarND-Traffic-Sign-Classifier-Project/blob/master/Traffic_Sign_Classifier.ipynb). 
-
-We also want you to create a detailed writeup of the project. Check out the [writeup template](https://github.com/udacity/CarND-Traffic-Sign-Classifier-Project/blob/master/writeup_template.md) for this project and use it as a starting point for creating your own writeup. The writeup can be either a markdown file or a pdf document.
-
-To meet specifications, the project will require submitting three files: 
-* the Ipython notebook with the code
-* the code exported as an html file
-* a writeup report either as a markdown or pdf file 
-
-Creating a Great Writeup
----
-A great writeup should include the [rubric points](https://review.udacity.com/#!/rubrics/481/view) as well as your description of how you addressed each point.  You should include a detailed description of the code used in each step (with line-number references and code snippets where necessary), and links to other supporting documents or external references.  You should include images in your writeup to demonstrate how your code works with examples.  
-
-All that said, please be concise!  We're not looking for you to write a book here, just a brief description of how you passed each rubric point, and references to the relevant code :). 
-
-You're not required to use markdown for your writeup.  If you use another method please just submit a pdf of your writeup.
-
-The Project
----
-The goals / steps of this project are the following:
+## The goals / steps of this project are the following:
 * Load the data set
 * Explore, summarize and visualize the data set
 * Design, train and test a model architecture
@@ -50,9 +25,28 @@ cd CarND-Traffic-Sign-Classifier-Project
 jupyter notebook Traffic_Sign_Classifier.ipynb
 ```
 
-### Requirements for Submission
-Follow the instructions in the `Traffic_Sign_Classifier.ipynb` notebook and write the project report using the writeup template as a guide, `writeup_template.md`. Submit the project code and writeup document.
+## Installation / Setup
 
-## How to write a README
-A well written README file can enhance your project and portfolio.  Develop your abilities to create professional README files by completing [this free course](https://www.udacity.com/course/writing-readmes--ud777).
+There are two ways of running this project:
 
+**1) The first one is to use jupyter notebook**
+* For get up and running with jupyter notebook please refer to the official documentation website:
+[Install Jupyter Notebook](https://jupyter.org/install)
+* Installing opencv can be a bit tricky. Here is a good installation doc for mac [Install Documenation for OpenCV](https://medium.com/@nuwanprabhath/installing-opencv-in-macos-high-sierra-for-python-3-89c79f0a246a)
+* It is recommended to make use of virtual environments.
+* After the installation you should be able to start the project with
+`jupyter notebook P1.ipynb`
+
+**2) The second one is to use a docker environment**
+* Install Docker environment
+For mac:
+[Install Docker on Mac](https://docs.docker.com/v17.12/docker-for-mac/install/)
+* Then pull the udacity docker environment with
+`docker pull udacity/carnd-term1-starter-kit`
+* Run the jupyter notebook in a docker environment with the following command:
+`docker run -it --rm --entrypoint "/run.sh" -p 8888:8888 -v `pwd`:/src udacity/carnd-term1-starter-kit`
+
+## License
+
+This project is licensed under the MIT License.
+[LICENSE](https://github.com/sratgh/Lane-finding/blob/master/LICENSE)
